@@ -9,193 +9,194 @@
 </head>
 <body>
 
-    <main>
+	<main>
 
-        <h1>osthase.tech</h1>
+		<h1>osthase.tech</h1>
 
-        <div id="katze">
-            <img src="assets/katze.jpg" alt="Katze" />
-        </div>
+		<div id="katze">
+			<img src="assets/katze.jpg" alt="Katze" />
+		</div>
 
-        <section class="card" id="bio">
-            <ul>
-                <li><b>💼 Azubi</b> <i>(Fachinformatik<br> für Anwendungsentwicklung)</i></li>
-                <li><b>📍 Karl-Marx-Stadt</b></li>
-                <li><a href="https://codeberg.org/haesemeyer" rel="noopener noreferrer"><b>💻 Codeberg</b></a></li>
-                <li><a href="https://github.com/haesemeyer-gh" rel="noopener noreferrer">💻 Github</a></li>
-                <li><a href="mailto:haesemeyer@mailbox.org"><b>✉️ Email/XMPP</b></a></li>
-                <li><a href="https://codeberg.org/haesemeyer.gpg" rel="noopener noreferrer"><b>🔑 PGP</b></a></li>
-            </ul>
-        </section>
+		<section class="card" id="bio">
+			<ul>
+				<li><b>💼 Azubi</b> <i>(Fachinformatik<br> für Anwendungsentwicklung)</i></li>
+				<li><b>📍 Karl-Marx-Stadt</b></li>
+				<li><a href="https://codeberg.org/haesemeyer" rel="noopener noreferrer"><b>💻 Codeberg</b></a></li>
+				<li><a href="https://github.com/haesemeyer-gh" rel="noopener noreferrer">💻 Github</a></li>
+				<li><a href="mailto:haesemeyer@mailbox.org"><b>✉️ Email/XMPP</b></a></li>
+				<li><a href="https://codeberg.org/haesemeyer.gpg" rel="noopener noreferrer"><b>🔑 PGP</b></a></li>
+			</ul>
+		</section>
 
-    </main>
+	</main>
 
-    <section>
+	<section>
 
-        <h2>skills</h2> <!--TODO-->
+		<h2>skills</h2> <!--TODO-->
 
-        <!-- Linux -->
-        <!-- Sprachen: Go, PHP, JS, C, C++, Java, Dart -->
-        <!-- Datenbanken -->
-        <!-- Git -->
-        <!-- Virtualisierung (Proxmox, Docker, Docker Compose, ...) -->
-        <!-- Web Frameworks: ExpressJS, React.js, Svelte/SvelteKit, TailwindCSS -->
-        <!-- Networking: OPNsense, OpenVPN, ... -->
-        <!-- Andere: OpenSSL / PKI -->
+		<!-- Linux -->
+		<!-- Sprachen: Go, PHP, JS, C, C++, Java, Dart -->
+		<!-- Datenbanken -->
+		<!-- Git -->
+		<!-- Virtualisierung (Proxmox, Docker, Docker Compose, ...) -->
+		<!-- Web Frameworks: ExpressJS, React.js, Svelte/SvelteKit, TailwindCSS -->
+		<!-- Networking: OPNsense, OpenVPN, ... -->
+		<!-- Andere: OpenSSL / PKI -->
 
-    </section>
+	</section>
 
-    <article id="portfolio">
+	<article id="portfolio">
 
-        <h2>portfolio</h2>
+		<h2>portfolio</h2>
 
-        <!-- TODO auf bilder klicken um zu vergrößern -->
+		<!-- TODO auf bilder klicken um zu vergrößern -->
 
-        <!-- kolibripad -->
-        <section class="portfolio-eintrag">
-            <details>
-                <summary><b>kolibripad</b></summary>
-                <figure>
-                    <img src="assets/portfolio/kolibripad_01_commands.png" alt="" />
-                    <figcaption>Eine geheime Botschaft wird mit KolibriPad verschlüsselt.</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/portfolio/kolibripad_02_keys.png" alt="" />
-                    <figcaption>Standard-Zeichensatz von KolibriPad<br>(88 Tasten ostdeutscher Schreibmaschinen)</figcaption>
-                </figure>
-                <p>
-                    <i>KolibriPad</i> ist eine einfache implementation der <i>One Time Pad</i> Verschlüsselung.
-                    Es ist ein CLI-Programm geschrieben in Go mit Cobra.
-                </p>
-                <p>
-                    <a href="https://codeberg.org/haesemeyer/kolibripad" rel="noopener noreferrer">Repo</a>
-                </p>
-            </details>
-        </section>
+		<!-- kolibripad -->
+		<section class="portfolio-eintrag">
+			<details>
+				<summary><b>kolibripad</b></summary>
+				<figure>
+					<img src="assets/portfolio/kolibripad_01_commands.png" alt="" />
+					<figcaption>Eine geheime Botschaft wird mit KolibriPad verschlüsselt.</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/portfolio/kolibripad_02_keys.png" alt="" />
+					<figcaption>Standard-Zeichensatz von KolibriPad<br>(88 Tasten ostdeutscher Schreibmaschinen)</figcaption>
+				</figure>
+				<p>
+					<i>KolibriPad</i> ist eine einfache implementation der <i>One Time Pad</i> Verschlüsselung.
+					Es ist ein CLI-Programm geschrieben in Go mit Cobra.
+				</p>
+				<p>
+					<a href="https://codeberg.org/haesemeyer/kolibripad" rel="noopener noreferrer">Repo</a>
+				</p>
+			</details>
+		</section>
 
-        <!-- arduino jumper -->
-        <section class="portfolio-eintrag">
-            <details>
-                <summary><b>arduino jumper</b></summary>
-                <figure>
-                    <img src="assets/portfolio/arduinojumper_01_gameplay.png" alt="" />
-                    <figcaption>Gameplay auf dem kleinen zweizeiligen LCD Bildschirm</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/portfolio/arduinojumper_02_hardware.png" alt="" />
-                    <figcaption>Alle unterstützten Hardware-Komponenten:<br>Displays, Eingabegeräte, LEDs, Lautsprecher und ganz viel Kabelsalat</figcaption>
-                </figure>
-                <p>
-                    <i>Arduino Jumper</i> ist ein Endless Runner, ähnlich wie das Chrome Dinosaurier Spiel, für unsere Arduino Baukästen.
-                    Es unterstützt viele optionale Bauteile, kann aber auch einfach mit Display und Gamepad gespielt werden.
-                    Ziel des Spiels ist es, so lange wie möglich zu überleben und dabei so viele Münzen wie möglich einzusammeln, ohne in einen Kaktus zu springen!
-                </p>
-                <p>
-                    <a href="https://github.com/SFZ-BBW-FI-Azubis/arduino-jumper" rel="noopener noreferrer">Repo</a> /
-                    <a href="https://effective-adventure-qr6v4yj.pages.github.io/arduino-jumper/" rel="noopener noreferrer">Dokumentation (intern)</a>
-                </p>
-            </details>
-        </section>
+		<!-- arduino jumper -->
+		<section class="portfolio-eintrag">
+			<details>
+				<summary><b>arduino jumper</b></summary>
+				<figure>
+					<img src="assets/portfolio/arduinojumper_01_gameplay.png" alt="" />
+					<figcaption>Gameplay auf dem kleinen zweizeiligen LCD Bildschirm</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/portfolio/arduinojumper_02_hardware.png" alt="" />
+					<figcaption>Alle unterstützten Hardware-Komponenten:<br>Displays, Eingabegeräte, LEDs, Lautsprecher und ganz viel Kabelsalat</figcaption>
+				</figure>
+				<p>
+					<i>Arduino Jumper</i> ist ein Endless Runner, ähnlich wie das Chrome Dinosaurier Spiel, für unsere Arduino Baukästen.
+					Es unterstützt viele optionale Bauteile, kann aber auch einfach mit Display und Gamepad gespielt werden.
+					Ziel des Spiels ist es, so lange wie möglich zu überleben und dabei so viele Münzen wie möglich einzusammeln, ohne in einen Kaktus zu springen!
+				</p>
+				<p>
+					<a href="https://github.com/SFZ-BBW-FI-Azubis/arduino-jumper" rel="noopener noreferrer">Repo</a> /
+					<a href="https://effective-adventure-qr6v4yj.pages.github.io/arduino-jumper/" rel="noopener noreferrer">Dokumentation (intern)</a>
+				</p>
+			</details>
+		</section>
 
-        <!-- brot -->
-        <section class="portfolio-eintrag">
-            <details>
-                <summary><b>b.r.o.t.</b></summary>
-                <figure>
-                    <img src="assets/portfolio/brot_01_titel.png" alt="" />
-                    <figcaption>Logo von B.R.O.T. - Beautiful RFID-Sensor of Time</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/portfolio/brot_03_uebersicht.png" alt="" />
-                    <figcaption>Übersicht über B.R.O.T.-Hardware: ESP32, LEDs, Lautsprecher, Display, RFID-Kartenleser und Uhr</figcaption>
-                </figure>
-                <p>
-                    <i>W.E.I.S.S./B.R.O.T.</i> ist ein Zeiterfassungssystem mit einem Arduino Nano ESP32.
-                    Azubis stempeln sich an dem <i>B.R.O.T.</i> mit ihrer Azubi-Karte ein.
-                    Nutzerverwaltung und Auswertung passieren über die <i>Wendige Einstempel-Internet-Server-Software</i>.
-                </p>
-                <p>
-                    Repos (intern):<br>
-                    <a href="https://github.com/SFZ-BBW-FI-Azubis/w.e.i.s.s." rel="noopener noreferrer">W.E.I.S.S.</a> /
-                    <a href="https://github.com/SFZ-BBW-FI-Azubis/b.r.o.t." rel="noopener noreferrer">B.R.O.T.</a>
-                </p>
-            </details>
-        </section>
+		<!-- brot -->
+		<section class="portfolio-eintrag">
+			<details>
+				<summary><b>b.r.o.t.</b></summary>
+				<figure>
+					<img src="assets/portfolio/brot_01_titel.png" alt="" />
+					<figcaption>Logo von B.R.O.T. - Beautiful RFID-Sensor of Time</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/portfolio/brot_03_uebersicht.png" alt="" />
+					<figcaption>Übersicht über B.R.O.T.-Hardware: ESP32, LEDs, Lautsprecher, Display, RFID-Kartenleser und Uhr</figcaption>
+				</figure>
+				<p>
+					<i>W.E.I.S.S./B.R.O.T.</i> ist ein Zeiterfassungssystem mit einem Arduino Nano ESP32.
+					Azubis stempeln sich an dem <i>B.R.O.T.</i> mit ihrer Azubi-Karte ein.
+					Nutzerverwaltung und Auswertung passieren über die <i>Wendige Einstempel-Internet-Server-Software</i>.
+				</p>
+				<p>
+					Repos (intern):<br>
+					<a href="https://github.com/SFZ-BBW-FI-Azubis/w.e.i.s.s." rel="noopener noreferrer">W.E.I.S.S.</a> /
+					<a href="https://github.com/SFZ-BBW-FI-Azubis/b.r.o.t." rel="noopener noreferrer">B.R.O.T.</a>
+				</p>
+			</details>
+		</section>
 
-        <!-- büffler -->
-        <section class="portfolio-eintrag">
-            <details>
-                <summary><b>der büffler</b></summary>
-                <p>
-                    <i>Der Büffler</i> ist ein kollaborativer Terminkalender für die Berufsschule.
-                    Nutzer können ganz einfach neue Termine (z.B. für Klassenarbeiten) erstellen und gemeinsam Notizen bearbeiten.
-                    E-Mail Digests und mobile Push-Benachrichtigungen erinnern die Azubis daran, dass eine Arbeit ansteht!
-                    Backend geschrieben in ExpressJS.
-                </p>
-                <p>
-                    <a href="https://github.com/SFZ-BBW-FI-Azubis/der_bueffler" rel="noopener noreferrer">Repo (intern)</a> /
-                    <a href="https://github.com/haesemeyer-gh/der_bueffler" rel="noopener noreferrer">Repo (klon)</a>
-                </p>
-            </details>
-        </section>
+		<!-- büffler -->
+		<section class="portfolio-eintrag">
+			<details>
+				<summary><b>der büffler</b></summary>
+				<p>
+					<i>Der Büffler</i> ist ein kollaborativer Terminkalender für die Berufsschule.
+					Nutzer können ganz einfach neue Termine (z.B. für Klassenarbeiten) erstellen und gemeinsam Notizen bearbeiten.
+					E-Mail Digests und mobile Push-Benachrichtigungen erinnern die Azubis daran, dass eine Arbeit ansteht!
+					Backend geschrieben in ExpressJS.
+				</p>
+				<p>
+					<a href="https://github.com/SFZ-BBW-FI-Azubis/der_bueffler" rel="noopener noreferrer">Repo (intern)</a> /
+					<a href="https://github.com/haesemeyer-gh/der_bueffler" rel="noopener noreferrer">Repo (klon)</a>
+				</p>
+			</details>
+		</section>
 
-        <!-- adventsrätsel -->
-        <section class="portfolio-eintrag">
-            <details>
-                <summary><b>adventsrätsel</b></summary>
-                <figure>
-                    <img src="assets/portfolio/advent_01_questions.png" alt="" />
-                    <figcaption><i>"Santa has Questions": Quiz</i></figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/portfolio/advent_02_hanging.png" alt="" />
-                    <figcaption><i>"Hanging with Santa": Galgenmännchen</i></figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/portfolio/advent_03_jumble.png" alt="" />
-                    <figcaption><i>"Santas jolly Jumble": Memory</i></figcaption>
-                </figure>
-                <p>
-                    Zu unserem Adventskalender habe ich unter anderem die Weihnachtsrätsel beigetragen.
-                    Das Backend ist in Go mit Gin und Gorilla Websockets geschrieben.
-                    Die Sieger der Spiele konnten sich für ein Gewinnspiel qualifizieren.
-                </p>
-                <p>
-                    <a href="https://github.com/SFZ-BBW-FI-Azubis/Advent-25" rel="noopener noreferrer">Repo (intern)</a>
-                </p>
-            </details>
-        </section>
+		<!-- adventsrätsel -->
+		<section class="portfolio-eintrag">
+			<details>
+				<summary><b>adventsrätsel</b></summary>
+				<figure>
+					<img src="assets/portfolio/advent_01_questions.png" alt="" />
+					<figcaption><i>"Santa has Questions": Quiz</i></figcaption>
+				</figure>
+				<figure>
+					<img src="assets/portfolio/advent_02_hanging.png" alt="" />
+					<figcaption><i>"Hanging with Santa": Galgenmännchen</i></figcaption>
+				</figure>
+				<figure>
+					<img src="assets/portfolio/advent_03_jumble.png" alt="" />
+					<figcaption><i>"Santas jolly Jumble": Memory</i></figcaption>
+				</figure>
+				<p>
+					Zu unserem Adventskalender habe ich unter anderem die Weihnachtsrätsel beigetragen.
+					Das Backend ist in Go mit Gin und Gorilla Websockets geschrieben.
+					Die Sieger der Spiele konnten sich für ein Gewinnspiel qualifizieren.
+				</p>
+				<p>
+					<a href="https://github.com/SFZ-BBW-FI-Azubis/Advent-25" rel="noopener noreferrer">Repo (intern)</a>
+				</p>
+			</details>
+		</section>
 
-        <!-- cshelltest -->
-        <section class="portfolio-eintrag">
-            <details>
-                <summary><b>cshelltest</b></summary>
-                <figure>
-                    <img src="assets/portfolio/cshelltest_01_example.png" alt="" />
-                    <figcaption>Cshelltest in Aktion: Befehle ausführen</figcaption>
-                </figure>
-                <p>
-                    <i>Cshelltest</i> ist eine einfache Shell (geschrieben in C) um die Sprache zu lernen.
-                    Sie auch eine Skriptsprache!
-                </p>
-                <p>
-                    <a href="https://github.com/haesemeyer-gh/cshelltest" rel="noopener noreferrer">Repo (intern)</a>
-                </p>
-            </details>
-        </section>
+		<!-- cshelltest -->
+		<section class="portfolio-eintrag">
+			<details>
+				<summary><b>cshelltest</b></summary>
+				<figure>
+					<img src="assets/portfolio/cshelltest_01_example.png" alt="" />
+					<figcaption>Cshelltest in Aktion: Befehle ausführen</figcaption>
+				</figure>
+				<p>
+					<i>Cshelltest</i> ist eine einfache Shell (geschrieben in C) um die Sprache zu lernen.
+					Sie auch eine Skriptsprache!
+				</p>
+				<p>
+					<a href="https://github.com/haesemeyer-gh/cshelltest" rel="noopener noreferrer">Repo (intern)</a>
+				</p>
+			</details>
+		</section>
 
-        <!-- TODO godot zeigen -->
+		<!-- TODO godot zeigen -->
 
-    </article>
+	</article>
 
-    <footer>
-        <hr />
-        <p>
-            © 2026 haesemeyer<br>
-            <a href="mailto:haesemeyer@mailbox.org"><i>&lthaesemeyer@mailbox.org&gt</i></a><br>
-            <a href="LICENSE.md" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>
-        </p>
-    </footer>
+	<footer>
+		<hr />
+		<p>
+			© 2026 haesemeyer<br>
+			<a href="mailto:haesemeyer@mailbox.org"><i>&lthaesemeyer@mailbox.org&gt</i></a><br>
+			<a href="LICENSE.md" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a><br>
+		</p>
+	</footer>
 
 </body>
 </html>
+

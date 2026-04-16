@@ -1,147 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #eff1f5;
-    color: #4c4f69;
-    accent-color: #8839ef;
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #eff1f5;
+	color: #4c4f69;
+	accent-color: #8839ef;
 	@media (prefers-color-scheme: dark) {
-        background-color: #1e1e2e;
-        color: #cdd6f4;
-        accent-color: #cba6f7;
-    }
+		background-color: #1e1e2e;
+		color: #cdd6f4;
+		accent-color: #cba6f7;
+	}
 }
 
 h1 {
-    text-align: center;
-    font-size: xx-large;
-    @media (width < 48rem) {
-        font-size: x-large;
-    }
+	text-align: center;
+	font-size: xx-large;
+	@media (width < 48rem) {
+		font-size: x-large;
+	}
 }
 h2 {
-    text-align: center;
-    font-size: x-large;
-    @media (width < 48rem) {
-        font-size: large;
-    }
+	text-align: center;
+	font-size: x-large;
+	@media (width < 48rem) {
+		font-size: large;
+	}
 }
 
 main {
-    margin: 0 50px;
-    @media (width < 48rem) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 50px;
+	@media (width < 48rem) {
 		margin: 0 50px;
 	}
 }
 
 footer {
-    margin: 65px 20px 30px 20px;
-    text-align: center;
+	margin: 65px 20px 30px 20px;
+	text-align: center;
 }
 footer,
 footer a {
-    color: #7c7f93;
-    @media (prefers-color-scheme: dark) {
-        color: #9399b2;
-    }
+	color: #7c7f93;
+	@media (prefers-color-scheme: dark) {
+		color: #9399b2;
+	}
 }
 footer > hr {
-    width: 300px;
+	width: 300px;
 }
 
 a {
-    color: #8839ef;
-    @media (prefers-color-scheme: dark) {
-        color: #cba6f7;
-    }
+	color: #8839ef;
+	@media (prefers-color-scheme: dark) {
+		color: #cba6f7;
+	}
 }
 
 .card {
-    margin: 5px;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: #ccd0da;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 20px;
+	background-color: #ccd0da;
 	@media (prefers-color-scheme: dark) {
-        background-color: #313244;
-    }
+		background-color: #313244;
+	}
 }
 
 #bio {
-    margin: 30px 0;
-    min-width: 320px;
-    ul {
-        margin: 0 15px;
-        padding: 15px;
-        list-style-type: none;
-    }
-    a {
-        text-decoration: none;
-    }
+	margin: 30px 0;
+	min-width: 320px;
+	max-width: fit-content;
+	ul {
+		margin: 0 15px;
+		padding: 15px;
+		list-style-type: none;
+	}
+	a {
+		text-decoration: none;
+	}
 }
 
 #katze {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 #katze > img {
-    animation: katze 4s ease-out infinite;
-    height: 100px;
+	animation: katze 4s ease-out infinite;
+	height: 100px;
 }
 @keyframes katze {
-    0% {
-        transform: scaleX(1);
-    }
-    50% {
-        transform: scaleX(2);
-    }
-    100% {
-        transform: scaleX(1);
-    }
+	0% {
+		transform: scaleX(1);
+	}
+	50% {
+		transform: scaleX(2);
+	}
+	100% {
+		transform: scaleX(1);
+	}
 }
 
 #portfolio {
-    max-width: 650px;
-    margin: 15px 20px
+	max-width: 650px;
+	margin: 15px 20px
 }
 
 .portfolio-eintrag details:open {
-    border: 2px dashed #9ca0b0;
-    @media (prefers-color-scheme: dark) {
-        border-color: #6c7086;
-    }
+	border: 2px dashed #9ca0b0;
+	@media (prefers-color-scheme: dark) {
+		border-color: #6c7086;
+	}
 }
 .portfolio-eintrag details,
 .portfolio-eintrag figure {
-    margin: 0;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
+	margin: 0;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
 }
 .portfolio-eintrag summary {
-    font-size: large;
-    text-align: center;
-    color: #8839ef;
+	font-size: large;
+	text-align: center;
+	color: #8839ef;
 	@media (prefers-color-scheme: dark) {
-        color: #cba6f7;
-    }
+		color: #cba6f7;
+	}
 }
 .portfolio-eintrag img {
-    width: 100%;
-    max-width: 300px;
+	width: 100%;
+	max-width: 300px;
 }
 .portfolio-eintrag figcaption {
-    margin: 10px;
-    text-align: center;
-    font-size: small;
-    color: #6c6f85;
+	margin: 10px;
+	text-align: center;
+	font-size: small;
+	color: #6c6f85;
 	@media (prefers-color-scheme: dark) {
-        color: #a6adc8;
-    }
+		color: #a6adc8;
+	}
 }
+
