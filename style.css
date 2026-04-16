@@ -3,9 +3,6 @@
 body {
 	font-family: "Roboto Mono", monospace;
 	font-optical-sizing: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	background-color: #eff1f5;
 	color: #4c4f69;
 	accent-color: #8839ef;
@@ -16,28 +13,66 @@ body {
 	}
 }
 
-h1 {
-	text-align: center;
-	font-size: xx-large;
-	@media (width < 48rem) {
-		font-size: x-large;
+#content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	@media (width < 56rem) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
-h2 {
-	text-align: center;
-	font-size: x-large;
-	@media (width < 48rem) {
-		font-size: large;
+#show {
+	flex-grow: 1;
+}
+#content .vertical-line {
+	@media (width < 56rem) {
+		display: none;
+	}
+}
+.vertical-line {
+	margin: 30px 0;
+	width: 1px;
+	background-color: #7c7f93;
+	@media (prefers-color-scheme: dark) {
+		background-color: #9399b2;
 	}
 }
 
-main {
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+
+body,
+main,
+#show,
+#top,
+#katze,
+.portfolio-eintrag details,
+.portfolio-eintrag figure {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+main {
 	margin: 0 50px;
 	@media (width < 48rem) {
 		margin: 0 50px;
+	}
+}
+
+#top {
+	top: 0;
+	width: 40%;
+	background: linear-gradient(180deg, rgb(239, 241, 245) 0%, rgba(255, 255, 255, 0) 100%);
+	@media (prefers-color-scheme: dark) {
+		background: linear-gradient(180deg, rgba(30, 30, 46, 1) 0%, rgba(255, 255, 255, 0) 100%);
 	}
 }
 
@@ -87,10 +122,13 @@ a {
 	}
 }
 
-#katze {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+@media (width >= 56rem) {
+	#top {
+		position: fixed;
+	}
+	#bio {
+		margin: 220px 0 0 0;
+	}
 }
 #katze > img {
 	animation: katze 4s ease-out infinite;
@@ -114,6 +152,7 @@ a {
 }
 
 .portfolio-eintrag details:open {
+	margin: 0 0 1px 0;
 	border: 2px dashed #9ca0b0;
 	@media (prefers-color-scheme: dark) {
 		border-color: #6c7086;
@@ -123,9 +162,6 @@ a {
 .portfolio-eintrag figure {
 	margin: 0;
 	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	text-align: justify;
 }
 .portfolio-eintrag summary {
