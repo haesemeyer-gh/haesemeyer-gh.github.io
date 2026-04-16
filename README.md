@@ -6,5 +6,5 @@ Licensed under **CC-BY-SA 4.0**
 
 - [ ] Skills
 - [ ] Portfolio Bilder vergrößern
-- [ ] Portfolio: Büffler
+- [ ] Portfolio: Büffler Screenshots
 - [ ] Portfolio: Godot
