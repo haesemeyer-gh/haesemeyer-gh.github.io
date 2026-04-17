@@ -1,164 +1,43 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
 	font-family: "Roboto Mono", monospace;
 	font-optical-sizing: auto;
+}
+
+/* Colors */
+
+body {
 	background-color: #eff1f5;
 	color: #4c4f69;
 	accent-color: #8839ef;
-	@media (prefers-color-scheme: dark) {
-		background-color: #1e1e2e;
-		color: #cdd6f4;
-		accent-color: #cba6f7;
-	}
 }
-
-#content {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	@media (width < 56rem) {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-}
-#show {
-	flex-grow: 1;
-}
-#content .vertical-line {
-	@media (width < 56rem) {
-		display: none;
-	}
-}
-.vertical-line {
-	margin: 30px 0;
-	width: 2px;
-	background-color: #7c7f93;
-	@media (prefers-color-scheme: dark) {
-		background-color: #9399b2;
-	}
-}
-
-h1 {
-	text-align: center;
-}
-h2 {
-	text-align: center;
-}
-
-body,
-main,
-#show,
-#top,
-#katze,
-.portfolio-eintrag details,
-.portfolio-eintrag figure {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-main {
-	margin: 0 50px;
-	@media (width < 48rem) {
-		margin: 0 50px;
-	}
-}
-
-#top {
-	top: 0;
-	width: 40%;
-	background: linear-gradient(180deg, rgb(239, 241, 245) 0%, rgba(255, 255, 255, 0) 100%);
-	@media (prefers-color-scheme: dark) {
-		background: linear-gradient(180deg, rgba(30, 30, 46, 1) 0%, rgba(255, 255, 255, 0) 100%);
-	}
-}
-
-footer {
-	margin: 65px 20px 30px 20px;
-	text-align: center;
-}
-footer,
-footer a {
-	color: #7c7f93;
-	@media (prefers-color-scheme: dark) {
-		color: #9399b2;
-	}
-}
-footer > hr {
-	width: 300px;
-}
-
 a {
 	color: #8839ef;
-	@media (prefers-color-scheme: dark) {
-		color: #cba6f7;
-	}
 }
-
+footer a {
+	color: #7c7f93;
+}
 .card {
-	margin: 5px;
-	padding: 5px;
-	border-radius: 20px;
 	background-color: #ccd0da;
-	@media (prefers-color-scheme: dark) {
-		background-color: #313244;
-	}
 }
-
-#bio {
-	margin: 30px 0;
-	min-width: 320px;
-	max-width: fit-content;
-	ul {
-		margin: 0 15px;
-		padding: 15px;
-		list-style-type: none;
-	}
-	a {
-		text-decoration: none;
-	}
+.vertical-line {
+	background-color: #7c7f93;
 }
-
-@media (width >= 56rem) {
-	#top {
-		position: fixed;
-	}
-	#bio {
-		margin: 220px 0 0 0;
-	}
+#top {
+	background: linear-gradient(180deg, rgb(239, 241, 245) 0%, rgba(255, 255, 255, 0) 100%);
 }
-#katze > img {
-	animation: katze 4s ease-out infinite;
-	height: 100px;
+.portfolio-eintrag summary {
+	color: #8839ef;
 }
-@keyframes katze {
-	0% {
-		transform: scaleX(1);
-	}
-	50% {
-		transform: scaleX(2);
-	}
-	100% {
-		transform: scaleX(1);
-	}
+.portfolio-eintrag figcaption {
+	color: #6c6f85;
 }
-
-#skills {
-	max-width: 650px;
-	padding: 20px;
-	text-align: center;
-	line-height: 250%;
+.portfolio-eintrag details:open {
+	border-color: #9ca0b0;
 }
-.skill {
-	border-radius: 6px;
-	padding: 5px 10px;
-	font-weight: bold;
-	white-space: nowrap;
-}
-
 .bg-pink,
 .bg-orange,
 .bg-yellow,
@@ -171,9 +50,6 @@ a {
 .bg-purple,
 .bg-text {
 	color: #dce0e8;
-	@media (prefers-color-scheme: dark) {
-		color: #11111b;
-	}
 }
 .bg-pink {
 	background-color: #ea76cb;
@@ -202,7 +78,49 @@ a {
 .bg-text {
 	background-color: #4c4f69;
 }
+
 @media (prefers-color-scheme: dark) {
+
+	body {
+		background-color: #1e1e2e;
+		color: #cdd6f4;
+		accent-color: #cba6f7;
+	}
+	a {
+		color: #cba6f7;
+	}
+	footer a {
+		color: #9399b2;
+	}
+	.card {
+		background-color: #313244;
+	}
+	.vertical-line {
+		background-color: #9399b2;
+	}
+	#top {
+		background: linear-gradient(180deg, rgba(30, 30, 46, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	}
+	.portfolio-eintrag summary {
+		color: #cba6f7;
+	}
+	.portfolio-eintrag figcaption {
+		color: #a6adc8;
+	}
+	.portfolio-eintrag details:open {
+		border-color: #6c7086;
+	}
+	.bg-pink,
+	.bg-orange,
+	.bg-yellow,
+	.bg-blue,
+	.bg-red,
+	.bg-green,
+	.bg-darkblue,
+	.bg-purple,
+	.bg-text {
+		color: #11111b;
+	}
 	.bg-pink {
 		background-color: #f5c2e7;
 	}
@@ -230,19 +148,144 @@ a {
 	.bg-text {
 		background-color: #cdd6f4;
 	}
+
+}
+
+/* General Layout */
+
+#content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	@media (width < 56rem) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+#show {
+	flex-grow: 1;
+}
+#content .vertical-line {
+	@media (width < 56rem) {
+		display: none;
+	}
+}
+
+.vertical-line {
+	margin: 30px 0;
+	width: 2px;
+}
+
+body,
+main,
+#show,
+#top,
+#katze,
+.portfolio-eintrag details,
+.portfolio-eintrag figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+
+main {
+	margin: 0 50px;
+}
+
+footer {
+	margin: 65px 20px 30px 20px;
+	text-align: center;
+}
+footer,
+footer > hr {
+	width: 300px;
+}
+
+/* Profile */
+
+.card {
+	margin: 5px;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+#bio {
+	min-width: 320px;
+	max-width: fit-content;
+	margin: 30px 0;
+	ul {
+		margin: 0 15px;
+		padding: 15px;
+		list-style-type: none;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+/* Katze */
+
+#top {
+	top: 0;
+	width: 40%;
+}
+@media (width >= 56rem) {
+	#top {
+		position: fixed;
+	}
+	#bio {
+		margin: 220px 0 0 0;
+	}
+}
+
+#katze > img {
+	animation: katze 4s ease-out infinite;
+	height: 100px;
+}
+@keyframes katze {
+	0% {
+		transform: scaleX(1);
+	}
+	50% {
+		transform: scaleX(2);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+/* Portfolio */
+
+#skills {
+	max-width: 650px;
+	padding: 20px;
+	line-height: 250%;
+	text-align: center;
+}
+.skill {
+	border-radius: 6px;
+	padding: 5px 10px;
+	font-weight: bold;
+	white-space: nowrap;
 }
 
 #portfolio {
 	max-width: 650px;
 	margin: 15px 20px
 }
-
 .portfolio-eintrag details:open {
 	margin: 0 0 1px 0;
-	border: 2px dashed #9ca0b0;
-	@media (prefers-color-scheme: dark) {
-		border-color: #6c7086;
-	}
+	border-width: 2px;
+	border-style: dashed;
 }
 .portfolio-eintrag details,
 .portfolio-eintrag figure {
@@ -253,10 +296,6 @@ a {
 .portfolio-eintrag summary {
 	font-size: large;
 	text-align: center;
-	color: #8839ef;
-	@media (prefers-color-scheme: dark) {
-		color: #cba6f7;
-	}
 }
 .portfolio-eintrag img {
 	width: 100%;
@@ -264,10 +303,6 @@ a {
 }
 .portfolio-eintrag figcaption {
 	margin: 10px;
-	text-align: center;
 	font-size: small;
-	color: #6c6f85;
-	@media (prefers-color-scheme: dark) {
-		color: #a6adc8;
-	}
+	text-align: center;
 }
