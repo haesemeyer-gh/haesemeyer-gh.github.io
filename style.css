@@ -184,7 +184,8 @@ main,
 #top,
 #katze,
 .portfolio-eintrag details,
-.portfolio-eintrag figure {
+.portfolio-eintrag figure,
+#fullscreen-img > div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -305,4 +306,61 @@ footer > hr {
 	margin: 10px;
 	font-size: small;
 	text-align: center;
+}
+
+/* Fullscreen Image */
+
+.display-none {
+	display: none;
+}
+
+#fullscreen-img {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(24, 24, 37, 0.5);
+}
+#fullscreen-img > div {
+	height: 100%;
+}
+#fullscreen-img > div > div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#fullscreen-close {
+	position: absolute;
+	top: 0;
+	right: 30px;
+	border: none;
+	background: none;
+	font-size: xx-large;
+	cursor: pointer;
+	div {
+		padding: 15px;
+		background: radial-gradient(circle,rgba(205, 214, 244, 0.8) 0%, rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0.0) 100%);
+		img {
+			width: 25px;
+			height: 25px;
+			margin: 15px;
+			@media (width < 48rem) {
+				margin: 10px;
+			}
+			opacity: 0.8;
+			filter: drop-shadow(0 3px 5px rgba(205, 214, 244, 0.8));
+		}
+	}
+}
+#fullscreen-img > div > div > div {
+	width: 100%;
+	height: 100%;
+	#fullscreen-src {
+		width: 100%;
+		height: 100%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 }
