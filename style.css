@@ -281,11 +281,15 @@ footer > hr {
 
 /* Portfolio */
 
-#skills {
+#skills,
+.pfbox {
 	max-width: 650px;
 	padding: 20px;
-	line-height: 250%;
 	text-align: center;
+}
+
+#skills {
+	line-height: 250%;
 }
 .skill {
 	transition: all 200ms ease-in-out;
@@ -402,3 +406,4 @@ footer > hr {
 		background-repeat: no-repeat;
 	}
 }
+
