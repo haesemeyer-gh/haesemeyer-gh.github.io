@@ -287,10 +287,16 @@ footer > hr {
 	text-align: center;
 }
 .skill {
+	transition: all 200ms ease-in-out;
 	border-radius: 6px;
 	padding: 5px 10px;
 	font-weight: bold;
 	white-space: nowrap;
+	opacity: 0.9;
+}
+.skill:hover {
+	padding: 6px 14px;
+	opacity: 1;
 }
 
 #portfolio {
@@ -311,10 +317,12 @@ footer > hr {
 .portfolio-eintrag summary {
 	font-size: large;
 	text-align: center;
+	cursor: pointer;
 }
 .portfolio-eintrag img {
 	width: 100%;
 	max-width: 300px;
+	cursor: pointer;
 }
 .portfolio-eintrag figcaption {
 	margin: 10px;
@@ -364,6 +372,7 @@ footer > hr {
 		padding: 15px;
 		background: radial-gradient(circle,rgba(205, 214, 244, 0.8) 0%, rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0.0) 100%);
 		img {
+			transition: all 200ms ease-in-out;
 			width: 25px;
 			height: 25px;
 			margin: 15px;
@@ -371,6 +380,8 @@ footer > hr {
 				margin: 10px;
 			}
 			opacity: 0.8;
+		}
+		img:hover {
 			filter: drop-shadow(0 3px 5px rgba(205, 214, 244, 0.8));
 		}
 	}
