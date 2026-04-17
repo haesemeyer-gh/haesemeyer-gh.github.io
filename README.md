@@ -4,7 +4,8 @@ Licensed under **CC-BY-SA 4.0**
 
 ## TODO
 
-- [ ] Skills
+- [ ] CSS aufräumen
 - [ ] Portfolio Bilder vergrößern
+- [ ] Portfolio: B.R.O.T. Bild
 - [ ] Portfolio: Büffler Screenshots
 - [ ] Portfolio: Godot
