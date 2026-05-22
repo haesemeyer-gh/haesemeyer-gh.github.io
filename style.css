@@ -24,6 +24,7 @@ h1 {
     }
 }
 h2 {
+    text-align: center;
     font-size: x-large;
     @media (width < 48rem) {
         font-size: large;
@@ -41,7 +42,8 @@ footer {
     margin: 65px 20px 30px 20px;
     text-align: center;
 }
-footer, footer a {
+footer,
+footer a {
     color: #7c7f93;
     @media (prefers-color-scheme: dark) {
         color: #9399b2;
@@ -99,5 +101,47 @@ a {
     }
     100% {
         transform: scaleX(1);
+    }
+}
+
+#portfolio {
+    max-width: 650px;
+    margin: 15px 20px
+}
+
+.portfolio-eintrag details:open {
+    border: 2px dashed #9ca0b0;
+    @media (prefers-color-scheme: dark) {
+        border-color: #6c7086;
+    }
+}
+.portfolio-eintrag details,
+.portfolio-eintrag figure {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.portfolio-eintrag summary {
+    font-size: large;
+    text-align: center;
+    color: #8839ef;
+	@media (prefers-color-scheme: dark) {
+        color: #cba6f7;
+    }
+}
+.portfolio-eintrag img {
+    width: 100%;
+    max-width: 300px;
+}
+.portfolio-eintrag figcaption {
+    margin: 10px;
+    text-align: center;
+    font-size: small;
+    color: #6c6f85;
+	@media (prefers-color-scheme: dark) {
+        color: #a6adc8;
     }
 }
