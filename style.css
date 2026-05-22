@@ -320,6 +320,14 @@ footer > hr {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+	box-sizing: border-box;
+	padding: 6.25rem;
+	@media (width < 64rem) {
+		padding: 3rem;
+	}
+	@media (width < 48rem) {
+		padding: 0;
+	}
 	background-color: rgba(24, 24, 37, 0.5);
 }
 #fullscreen-img > div {
