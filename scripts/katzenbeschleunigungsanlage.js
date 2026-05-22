@@ -1,4 +1,5 @@
 const katze = document.getElementById('katze').firstElementChild;
+const explosion = document.getElementById('katze').lastElementChild;
 
 let speed = 4;
 setInterval(() => {
@@ -6,6 +7,6 @@ setInterval(() => {
         speed -= 0.001;
         katze.style.animationDuration = `${speed}s`;
     } else {
-        // explosion
+        explosion.classList.remove("display-none");
     }
 }, 1000);

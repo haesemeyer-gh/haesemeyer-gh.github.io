@@ -249,9 +249,22 @@ footer > hr {
 	}
 }
 
+#katze {
+	position: relative;
+}
 #katze > img {
 	animation: katze 4s ease-out infinite;
 	height: 100px;
+}
+#katze > div {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background-size: ccover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url("assets/explosion.gif");
 }
 @keyframes katze {
 	0% {
