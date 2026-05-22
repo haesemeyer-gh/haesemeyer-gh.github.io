@@ -6,7 +6,6 @@ Licensed under **CC-BY-SA 4.0**
 
 - [ ] Skills
 - [ ] Portfolio Bilder vergrößern
-- [ ] Portfolio: KolibriPad
 - [ ] Portfolio: B.R.O.T.
 - [ ] Portfolio: Büffler
 - [ ] Portfolio: Godot
