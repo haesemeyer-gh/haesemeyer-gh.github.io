@@ -23,6 +23,12 @@ h1 {
         font-size: x-large;
     }
 }
+h2 {
+    font-size: x-large;
+    @media (width < 48rem) {
+        font-size: large;
+    }
+}
 
 main {
     margin: 0 50px;
