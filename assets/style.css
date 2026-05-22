@@ -1,0 +1,65 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+	font-family: "Libertinus Mono", "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+}
+
+/* Colors */
+
+body {
+	background-color: #eff1f5;
+	color: #4c4f69;
+	accent-color: #8839ef;
+}
+a {
+	color: #8839ef;
+}
+footer,
+footer a {
+	color: #7c7f93;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #1e1e2e;
+		color: #cdd6f4;
+		accent-color: #cba6f7;
+	}
+	a {
+		color: #cba6f7;
+	}
+	footer,
+	footer a {
+		color: #9399b2;
+	}
+}
+
+/* General Layout */
+
+body,
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 50px;
+}
+
+main > img {
+	width: 256px;
+	height: 256px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+footer {
+	margin: 100px 20px 30px 20px;
+	text-align: center;
+}
+footer > hr {
+	width: 300px;
+}
+
