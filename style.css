@@ -227,6 +227,7 @@ footer > hr {
 	ul {
 		margin: 0 15px;
 		padding: 15px;
+		line-height: 25px;
 		list-style-type: none;
 	}
 	a {
@@ -315,9 +316,13 @@ footer > hr {
 	text-align: justify;
 }
 .portfolio-eintrag summary {
+	transition: all 300ms ease-out;
 	font-size: large;
 	text-align: center;
 	cursor: pointer;
+}
+.portfolio-eintrag summary:hover {
+	letter-spacing: 2px;
 }
 .portfolio-eintrag img {
 	width: 100%;
@@ -372,7 +377,7 @@ footer > hr {
 		padding: 15px;
 		background: radial-gradient(circle,rgba(205, 214, 244, 0.8) 0%, rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0.0) 100%);
 		img {
-			transition: all 200ms ease-in-out;
+			transition: all 150ms ease-out;
 			width: 25px;
 			height: 25px;
 			margin: 15px;
@@ -382,7 +387,7 @@ footer > hr {
 			opacity: 0.8;
 		}
 		img:hover {
-			filter: drop-shadow(0 3px 5px rgba(205, 214, 244, 0.8));
+			filter: drop-shadow(0 3px 5px rgba(205, 214, 244, 1));
 		}
 	}
 }
