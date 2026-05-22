@@ -17,6 +17,7 @@ body {
 a {
 	color: #8839ef;
 }
+footer,
 footer a {
 	color: #7c7f93;
 }
@@ -89,6 +90,7 @@ footer a {
 	a {
 		color: #cba6f7;
 	}
+	footer,
 	footer a {
 		color: #9399b2;
 	}
@@ -206,7 +208,6 @@ footer {
 	margin: 65px 20px 30px 20px;
 	text-align: center;
 }
-footer,
 footer > hr {
 	width: 300px;
 }
