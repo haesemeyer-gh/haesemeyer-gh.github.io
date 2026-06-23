@@ -297,7 +297,7 @@ main p,
 }
 
 .catify-title {
-	margin: 0.5rem;	
+	margin: 0.5rem;
 	text-align: center;
 }
 
@@ -331,7 +331,7 @@ main p,
 }
 
 #catify-reset {
-	width: 7rem;
+	width: 7.5rem;
 	margin: 1rem 0.5rem;
 	padding: 0.2rem;
 	border-radius: 0.5rem;
@@ -488,3 +488,4 @@ main p,
 		background-repeat: no-repeat;
 	}
 }
+

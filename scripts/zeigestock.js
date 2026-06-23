@@ -1,14 +1,18 @@
 /* Canvas */
 
+// Create Canvas
 var canvas = document.createElement('canvas');
 canvas.style.position = "fixed";
 canvas.style.top = 0;
 canvas.style.left = 0;
-canvas.style.pointerEvents = "none";
 canvas.style.display = "none";
+// allow clicking through canvas, disable this so you can't click anything anymore
+canvas.style.pointerEvents = "none";
 
+// Canvas is always the size of the viewport
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
+// allow resizing window without having to reload page
 window.addEventListener('resize', () => {
 	canvas.height = window.innerHeight;
 	canvas.width = window.innerWidth;
@@ -16,6 +20,7 @@ window.addEventListener('resize', () => {
 
 document.body.appendChild(canvas);
 
+// Zeigestock Image Definition
 var zeigestock = new Image();
 zeigestock.onload = function() {
 	drawZeigestock(0);
@@ -25,6 +30,7 @@ zeigestock.style.objectFit = "cover";
 
 var ctx = canvas.getContext('2d');
 
+// Function to draw Zeigestock on the Canvas
 function drawZeigestock(angle, mouseX, mouseY) {
 	ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 	ctx.save();
@@ -36,8 +42,8 @@ function drawZeigestock(angle, mouseX, mouseY) {
 	ctx.restore();
 }
 
+// Mouse Move Event
 document.onmousemove = function(e) {
-	console.log(e);
 	var dx = e.clientX - window.innerWidth;
 	var dy = e.clientY - window.innerHeight;
 	var theta = Math.atan2(dy, dx);
@@ -52,7 +58,17 @@ zeigestockToggleText.innerText = "Zeigestock: ";
 const zeigestockToggleBox = document.createElement('input');
 zeigestockToggleBox.type = "checkbox";
 zeigestockToggleBox.addEventListener('input', () => {
+	// Toggle Canvas Visibility
 	canvas.style.display = (zeigestockToggleBox.checked ? "block" : "none");
+	// Toggle Hidden Cursor
+	if (zeigestockToggleBox.checked) {
+		const hiddenCursor = document.createElement('style');
+		hiddenCursor.id = 'zeigestock-hidden-cursor-style';
+		hiddenCursor.textContent = "* { cursor: none !important; }";
+		document.head.appendChild(hiddenCursor);
+	} else {
+		document.getElementById('zeigestock-hidden-cursor-style').remove();
+	}
 });
 
 const zeigestockToggle = document.createElement('label');
