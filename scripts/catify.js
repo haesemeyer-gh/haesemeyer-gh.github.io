@@ -11,7 +11,7 @@ source.addEventListener('input', () => {
     katze.src = source.value;
 });
 speed.addEventListener('input', () => {
-    katze.style.animationDuration = `${speed.value}s`;
+    katze.style.animationDuration = `${5-speed.value}s`;
 });
 stretchiness.addEventListener('input', () =>  {
     document.documentElement.style.setProperty('--katze-stretchiness', stretchiness.value);
@@ -41,7 +41,7 @@ reset.addEventListener('click', () => {
     katze.src = sourceDefaultVal;
 
     speed.value = speedDefaultVal;
-    katze.style.animationDuration = `${speedDefaultVal}s`;
+    katze.style.animationDuration = `${5-speedDefaultVal}s`;
 
     stretchiness.value = stretchinessDefaultVal;
     document.documentElement.style.setProperty('--katze-stretchiness', stretchinessDefaultVal);
@@ -49,7 +49,8 @@ reset.addEventListener('click', () => {
     height.value = heightDefaultVal;
     katze.style.height = `${heightDefaultVal}px`;
     explosion.style.height = `${explosionDefaultHeight}px`;
-    
+
     explosiontoggle.checked = explosiontoggleDefaultVal;
     explosion.classList.add("display-none");
 });
+
