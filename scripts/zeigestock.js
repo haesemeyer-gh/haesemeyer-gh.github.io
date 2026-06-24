@@ -3,9 +3,15 @@ HTML:
     <script src="https://haesemeyer.dev/scripts/zeigestock.js"></script>
 JavaScript (can be copied into Developer Console on any Web Page):
     (() => {let s = document.createElement('script'); s.src="https://haesemeyer.dev/scripts/zeigestock.js"; document.head.appendChild(s);})();
+To enable by default, set the `zeigestockDefaultEnabled` Variable to `true` before running the Script
+    var zeigestockDefaultEnabled = true;
 */
 
-(() => {
+if (typeof variable !== 'undefined') {
+    var zeigestockDefaultEnabled = false;
+} 
+
+((defaultEnabled) => {
 
     /* Canvas */
 
@@ -91,7 +97,12 @@ JavaScript (can be copied into Developer Console on any Web Page):
     zeigestockMenu.style.right = 0;
     zeigestockMenu.style.zIndex = 123451;
     zeigestockMenu.appendChild(zeigestockToggle);
-
+    
     document.body.appendChild(zeigestockMenu);
 
-})();
+    if (defaultEnabled) {
+        zeigestockToggleBox.checked = true;
+        zeigestockToggleBox.dispatchEvent(new Event('input'));
+    }
+
+})(zeigestockDefaultEnabled);
