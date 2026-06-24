@@ -59,7 +59,7 @@ if (typeof variable !== 'undefined') {
     }
 
     // Mouse Move Event
-    document.onmousemove = function(e) {
+    document.onpointermove = function(e) {
         let dx = e.clientX - window.innerWidth;
         let dy = e.clientY - window.innerHeight;
         let theta = Math.atan2(dy, dx);
