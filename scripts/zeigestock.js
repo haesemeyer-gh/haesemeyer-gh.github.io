@@ -67,14 +67,14 @@ if (typeof variable !== 'undefined') {
     }
 
     // Mouse Move Event
-    document.onpointermove = (e) => {
+    window.addEventListener('pointermove', (e) => {
         moveMouse(e.clientX, e.clientY);
-    };
+    });
     // Touch Screen Event
-    document.ontouchmove = (e) => {
-        e.preventDefault();
+    window.addEventListener('touchmove', (e) => {
         moveMouse(e.touches[0].clientX, e.touches[0].clientY);
-    };
+        e.preventDefault();
+    }, { passive: false });
 
     /* Menu */
 
