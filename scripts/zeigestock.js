@@ -5,6 +5,9 @@ JavaScript (can be copied into Developer Console on any Web Page):
     (() => {let s = document.createElement('script'); s.src="https://haesemeyer.dev/scripts/zeigestock.js"; document.head.appendChild(s);})();
 To enable by default, set the `zeigestockDefaultEnabled` Variable to `true` before running the Script
     var zeigestockDefaultEnabled = true;
+    
+If you modify this Script, please also consider modifying the derivative Browser Extension:
+- https://codeberg.org/haesemeyer/zeigestock-everywhere
 */
 
 if (typeof variable !== 'undefined') {
