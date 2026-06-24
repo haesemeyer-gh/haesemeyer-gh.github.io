@@ -74,7 +74,7 @@ if (typeof variable !== 'undefined') {
     window.addEventListener('touchmove', (e) => {
         moveMouse(e.touches[0].clientX, e.touches[0].clientY);
         e.preventDefault();
-    }, { passive: false });
+    });
 
     /* Menu */
 
