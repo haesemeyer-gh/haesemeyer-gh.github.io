@@ -57,13 +57,23 @@ if (typeof variable !== 'undefined') {
         ctx.drawImage(zeigestock, -zeigestock.width, -zeigestock.height, );
         ctx.restore();
     }
-
-    // Mouse Move Event
-    document.onpointermove = function(e) {
-        let dx = e.clientX - window.innerWidth;
-        let dy = e.clientY - window.innerHeight;
+    
+    // Function to draw Zeigestock at Mouse Position
+    function moveMouse(x, y) {
+        let dx = x - window.innerWidth;
+        let dy = y - window.innerHeight;
         let theta = Math.atan2(dy, dx);
         drawZeigestock(theta, dx, dy);
+    }
+
+    // Mouse Move Event
+    document.onpointermove = (e) => {
+        moveMouse(e.clientX, e.clientY);
+    };
+    // Touch Screen Event
+    document.ontouchmove = (e) => {
+        e.preventDefault();
+        moveMouse(e.touches[0].clientX, e.touches[0].clientY);
     };
 
     /* Menu */
