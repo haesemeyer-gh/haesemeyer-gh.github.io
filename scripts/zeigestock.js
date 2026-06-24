@@ -1,3 +1,10 @@
+/* Add zeigestock.js to your own Web Page!
+HTML:
+    <script src="https://haesemeyer.dev/scripts/zeigestock.js"></script>
+JavaScript (can be copied into Developer Console on any Web Page):
+    (() => {let s = document.createElement('script'); s.src="https://haesemeyer.dev/scripts/zeigestock.js"; document.head.appendChild(s);})();
+*/
+
 (() => {
 
     /* Canvas */
